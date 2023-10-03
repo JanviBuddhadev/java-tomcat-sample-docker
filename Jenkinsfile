@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
+                echo "This is right file...."
                 sh 'mvn -f pom.xml clean package'
             }
             post {
